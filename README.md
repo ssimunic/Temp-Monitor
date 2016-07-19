@@ -29,7 +29,7 @@ Internet of Things data platform for temperature and humidity sensors with maps
 Visit [tempmonitor.silviosimunic.com](http://tempmonitor.silviosimunic.com) for demo.
 
 ## License
-See [LICENSE](https://github.com/ssimunic/Temp-Monitor/blob/master/README.md).
+See [LICENSE](https://github.com/ssimunic/Temp-Monitor/blob/master/LICENSE).
 
 ## Technology stack
 * [Laravel](https://laravel.com/) for website and RESTful API
