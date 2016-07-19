@@ -126,5 +126,5 @@ If you are getting 500 error at this point, run
 ```
 sudo chmod 755 -R project_folder
 
-chmod -R o+w project_folder/storage project_folder/public/uploads
+sudo chmod -R o+w project_folder/storage project_folder/public/uploads
 ```
