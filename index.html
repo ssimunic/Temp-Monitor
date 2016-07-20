@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Temp Monitor by ssimunic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Temp Monitor</h1>
+      <h2 class="project-tagline">Internet of Things data platform for temperature and humidity sensors with maps</h2>
+      <a href="https://github.com/ssimunic/Temp-Monitor" class="btn">View on GitHub</a>
+      <a href="https://github.com/ssimunic/Temp-Monitor/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/ssimunic/Temp-Monitor/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="temp-monitor" class="anchor" href="#temp-monitor" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Temp Monitor</h1>
+
+<p>Internet of Things data platform for temperature and humidity sensors with maps</p>
+
+<h2>
+<a id="table-of-contents" class="anchor" href="#table-of-contents" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Table of contents</h2>
+
+<ul>
+<li><a href="#demo">Demo</a></li>
+<li><a href="#license">License</a></li>
+<li><a href="#technology-stack">Technology stack</a></li>
+<li>
+<a href="#features">Features</a>
+
+<ul>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#sensors-list">Sensors list</a></li>
+<li>
+<a href="#sensor-monitor">Sensor monitor</a>
+
+<ul>
+<li><a href="#live">Live</a></li>
+<li><a href="#24-hours">24 hours</a></li>
+<li><a href="#30-days">30 days</a></li>
+</ul>
+</li>
+<li><a href="#sensor-settings">Sensor settings</a></li>
+<li><a href="#sensor-api">Sensor API</a></li>
+<li>
+<a href="#maps">Maps</a>
+
+<ul>
+<li><a href="#google-maps">Google Maps</a></li>
+<li><a href="#custom-maps-default">Custom maps (Default)</a></li>
+<li><a href="#custom-maps-heatmap">Custom maps (Heatmap)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#how-to-deploy">How to deploy</a>
+
+<ul>
+<li><a href="#requirements">Requirements</a></li>
+<li><a href="#database">Database</a></li>
+<li><a href="#composer">Composer</a></li>
+<li><a href="#permissions">Permissions</a></li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="demo" class="anchor" href="#demo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Demo</h2>
+
+<p>Visit <a href="http://tempmonitor.silviosimunic.com">tempmonitor.silviosimunic.com</a> for demo.</p>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h2>
+
+<p>See <a href="https://github.com/ssimunic/Temp-Monitor/blob/master/LICENSE">LICENSE</a>.</p>
+
+<h2>
+<a id="technology-stack" class="anchor" href="#technology-stack" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Technology stack</h2>
+
+<ul>
+<li>
+<a href="https://laravel.com/">Laravel</a> for website and RESTful API</li>
+<li>
+<a href="https://www.mysql.com/">MySQL</a> database</li>
+</ul>
+
+<p>This project is also using <a href="https://jquery.com/">jQuery</a>, <a href="http://getbootstrap.com/">Bootstrap</a> and <a href="https://developers.google.com/maps/">Google Maps API</a>.</p>
+
+<p>Theme used is <a href="https://bootswatch.com/paper/">Bootswatch Paper</a>. </p>
+
+<p>Charts are powered by <a href="http://www.highcharts.com/">Highcharts</a>. See their <a href="https://shop.highsoft.com/highcharts">License/Pricing</a>.</p>
+
+<p>Heatmaps are generated with <a href="https://www.patrick-wied.at/static/heatmapjs/">heatmap.js</a>.</p>
+
+<h2>
+<a id="features" class="anchor" href="#features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Features</h2>
+
+<h3>
+<a id="overview" class="anchor" href="#overview" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Overview</h3>
+
+<p>Home page when user is logged in.</p>
+
+<p><img src="http://i.imgur.com/GJCJ37s.png" alt=""></p>
+
+<h3>
+<a id="sensors-list" class="anchor" href="#sensors-list" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Sensors list</h3>
+
+<p>List of sensors with latest data and action menu.</p>
+
+<p><img src="http://i.imgur.com/SyRgTN7.png" alt=""></p>
+
+<h3>
+<a id="sensor-monitor" class="anchor" href="#sensor-monitor" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Sensor monitor</h3>
+
+<h4>
+<a id="live" class="anchor" href="#live" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Live</h4>
+
+<p>Displays temperature and humidity line chart with live data.</p>
+
+<p><img src="http://i.imgur.com/O1InGkm.png" alt=""></p>
+
+<h4>
+<a id="24-hours" class="anchor" href="#24-hours" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>24 hours</h4>
+
+<p>Displays temperature line chart (average and range) for last 24 hours.</p>
+
+<p><img src="http://i.imgur.com/FC7EpI0.png" alt=""></p>
+
+<h4>
+<a id="30-days" class="anchor" href="#30-days" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>30 days</h4>
+
+<p>Displays temperature line chart (average and range) for last 30 days.</p>
+
+<h3>
+<a id="sensor-settings" class="anchor" href="#sensor-settings" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Sensor settings</h3>
+
+<p>Change sensor settings and alerts.</p>
+
+<p><img src="http://i.imgur.com/dYZAet6.png" alt=""></p>
+
+<h3>
+<a id="sensor-api" class="anchor" href="#sensor-api" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Sensor API</h3>
+
+<p>Quick guide on how to use RESTful API for selected sensor.</p>
+
+<p><img src="http://i.imgur.com/uKWu0Du.png" alt=""></p>
+
+<h3>
+<a id="maps" class="anchor" href="#maps" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Maps</h3>
+
+<h4>
+<a id="google-maps" class="anchor" href="#google-maps" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Google Maps</h4>
+
+<p>Basic interactive Google Map with sensor data.</p>
+
+<p><img src="http://i.imgur.com/2UjlBW4.jpg" alt=""></p>
+
+<h4>
+<a id="custom-maps-default" class="anchor" href="#custom-maps-default" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Custom maps (Default)</h4>
+
+<p>Custom map with background.</p>
+
+<p><img src="http://i.imgur.com/LoBJ5Ly.png" alt=""></p>
+
+<h4>
+<a id="custom-maps-heatmap" class="anchor" href="#custom-maps-heatmap" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Custom maps (Heatmap)</h4>
+
+<p>Custom map with background and heatmap.</p>
+
+<p><img src="http://i.imgur.com/9ZYkpMY.png" alt=""></p>
+
+<h2>
+<a id="how-to-deploy" class="anchor" href="#how-to-deploy" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to deploy</h2>
+
+<h3>
+<a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Requirements</h3>
+
+<ul>
+<li>Apache 2</li>
+<li>PHP 5.6</li>
+<li>MySQL</li>
+<li>Composer</li>
+</ul>
+
+<h3>
+<a id="database" class="anchor" href="#database" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Database</h3>
+
+<p>Download <code>structure.sql</code> file and execute SQL.</p>
+
+<pre><code>root@server:~$ mysql -u root -p
+
+mysql&gt; source path/to/structure.sql
+</code></pre>
+
+<p>This will create <code>tempmonitor</code> database and tables.</p>
+
+<p>Configure MySQL settings in <code>.env</code> and <code>config/database.php</code> files.</p>
+
+<h3>
+<a id="composer" class="anchor" href="#composer" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Composer</h3>
+
+<p>Run <code>composer install</code> inside project folder to install dependencies.</p>
+
+<h3>
+<a id="permissions" class="anchor" href="#permissions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Permissions</h3>
+
+<p>If you are getting 500 error at this point, run</p>
+
+<pre><code>sudo chmod 755 -R project_folder
+
+sudo chmod -R o+w project_folder/storage project_folder/public/uploads
+</code></pre>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/ssimunic/Temp-Monitor">Temp Monitor</a> is maintained by <a href="https://github.com/ssimunic">ssimunic</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
