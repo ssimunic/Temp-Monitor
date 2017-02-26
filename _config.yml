@@ -1,0 +1,8 @@
+title: Temp Monitor
+description: Internet of Things data platform for temperature and humidity sensors with maps
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-cayman
+
+gems:
+  - jekyll-mentions
