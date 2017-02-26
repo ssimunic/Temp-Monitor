@@ -43,6 +43,8 @@ Charts are powered by [Highcharts](http://www.highcharts.com/). See their [Licen
 
 Heatmaps are generated with [heatmap.js](https://www.patrick-wied.at/static/heatmapjs/).
 
+[ESP8266 module](https://github.com/ssimunic/esp8266-dht22) was used for this project.
+
 ## Features
 ### Overview
 Home page when user is logged in.
